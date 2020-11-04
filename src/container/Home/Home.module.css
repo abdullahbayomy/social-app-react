@@ -1,0 +1,192 @@
+.Posts_Container {
+  padding: 4rem 0;
+}
+
+.Content_Conatiner {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+
+.Create_post_Container {
+  display: grid;
+  align-items: center;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(58, 58, 58, 0.514);
+  transition: all 0.5s ease-in-out;
+}
+
+.Create_post_Container:hover {
+  box-shadow: 1px 1px 15px rgba(58, 58, 58, 0.514);
+}
+
+.Avatar_Container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px dotted rgb(185, 185, 185);
+}
+
+.Avatar_Container img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.Avatar_Container div {
+  background-color: rgb(245, 243, 243);
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Avatar_Container div:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.Icon_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.Icon_Container i {
+  color: rgb(103, 201, 132);
+  font-size: 1.3rem;
+}
+
+.Icon_Container i,
+.Icon_Container span {
+  margin-right: 0.4rem;
+}
+
+.Icon_Container:hover {
+  background-color: rgb(245, 243, 243);
+}
+
+.Modal_container .Content_Container textarea {
+  width: 90%;
+  height: 100px;
+  padding-top: 1rem;
+  font-size: 2rem;
+  overflow: hidden;
+  color: rgb(97, 96, 96);
+  border: none;
+}
+
+.Modal_container .Content_Container textarea:focus {
+  outline: none;
+}
+
+.Modal_container .Content_Container textarea::placeholder {
+  color: rgb(184, 182, 182);
+  font-size: 1.5rem;
+}
+
+.Modal_container .Content_Container img {
+  height: 300px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Modal_container .SubmitPost_Container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+
+.Btn {
+  padding: 0.6rem 4rem;
+  background-color: #3578e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.Btn:hover {
+  background-color: #2d6bcf;
+}
+
+.User_Container {
+  padding-top: 4rem;
+  height: 100%;
+}
+
+.SearchBar {
+  margin-top: 2rem;
+  background-color: rgb(245, 243, 243);
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  border-radius: 25px;
+  cursor: text;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(58, 58, 58, 0.514);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+}
+
+.SearchBar:focus,
+.SearchBar:active {
+  outline: none;
+  border: none;
+}
+
+.SearchBar:hover {
+  box-shadow: 1px 1px 15px rgba(58, 58, 58, 0.514);
+}
+
+.SearchBar input {
+  background-color: rgb(245, 243, 243);
+  width: 100%;
+  border: none;
+  padding: 0.3rem 0;
+  padding-left: 0.3rem;
+}
+
+.SearchBar input:focus,
+.SearchBar input:active {
+  outline: none;
+  border: none;
+}
+
+.SearchBar i {
+  color: rgb(112, 110, 110);
+}
+
+@media only screen and (max-width: 450px) {
+  .Content_Conatiner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Posts_Container {
+    padding: 0;
+  }
+}
